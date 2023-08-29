@@ -14,3 +14,5 @@ jobs:
         steps:
             - name: Hmm
               uses: lukaszachy/action-repo@v1
+              env:
+                GH_TOKEN: ${{ github.token }}
