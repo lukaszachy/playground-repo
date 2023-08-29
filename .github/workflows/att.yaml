@@ -1,12 +1,9 @@
 name: Attempt
 
 on:
-    pull_request:
-        types:
-        - labeled
-        - opened
-    push
-    label
+    - pull_request
+    - push
+    - label
     
     
     
