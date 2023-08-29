@@ -16,3 +16,4 @@ jobs:
               uses: lukaszachy/action-repo@v1
               env:
                 GH_TOKEN: ${{ github.token }}
+                REPO: "lukaszachy/playground-repo"
