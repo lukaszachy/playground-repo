@@ -1,18 +1,12 @@
-name: Attempt
-
+name: Merge babysitter
 on:
     - pull_request
-    - push
-    - label
-    
-    
     
 jobs:
     letsee:
         runs-on: ubuntu-latest
-
         steps:
-            - name: Hmm
+            - name: Rebase and/or auto merge
               uses: lukaszachy/action-repo@v1
               env:
                 GH_TOKEN: ${{ github.token }}
