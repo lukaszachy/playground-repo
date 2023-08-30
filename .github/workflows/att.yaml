@@ -1,7 +1,12 @@
 name: Merge babysitter
 on:
-    - pull_request
-    
+    pull_request:
+        types:
+        - labeled
+        - opened
+        - synchronize
+        - review_request_
+        - auto_merge_enabled
 jobs:
     letsee:
         runs-on: ubuntu-latest
