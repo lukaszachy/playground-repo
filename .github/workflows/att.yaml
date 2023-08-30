@@ -12,7 +12,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Rebase and/or auto merge
-              uses: lukaszachy/action-repo@v1
+              uses: lukaszachy/merge-babysitter-action@v1
               env:
                 GH_TOKEN: ${{ github.token }}
                 REPO: "lukaszachy/playground-repo"
