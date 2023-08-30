@@ -8,10 +8,10 @@ on:
         - review_request_
         - auto_merge_enabled
 jobs:
-    letsee:
+    merge_or_rebase:
         runs-on: ubuntu-latest
         steps:
-            - name: Rebase and/or auto merge
+            - name: Set the auto-merge or rebase the PR
               uses: lukaszachy/merge-babysitter-action@v1
               env:
                 GH_TOKEN: ${{ github.token }}
